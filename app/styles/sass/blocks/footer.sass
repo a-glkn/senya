@@ -1,0 +1,91 @@
+.sahalin
+    display: flex
+    &__img
+        margin-right: 20px
+        margin-top: auto
+        margin-bottom: auto
+    &__text
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        color: #FFFFFF
+        margin-top: auto
+        margin-bottom: auto
+
+
+.footer
+    text-align: center
+    background-color: #101840
+    border-top-left-radius: 33%
+    border-top-right-radius: 33%
+    padding-top: 80px
+    padding-bottom: 60px
+    .safety
+        width: 322px
+        height: 69px
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 20px
+    .sahalin
+        max-width: 339px
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 40px
+        &__img
+            img
+                max-width: 100%
+                height: auto
+        &__text
+            font-style: normal
+            font-weight: 400
+            font-size: 18px
+            line-height: 22px
+            color: #FFFFFF
+    nav
+        margin-bottom: 20px
+        ul
+            display: flex
+            justify-content: center
+            li
+                margin-left: 5px
+                margin-right: 5px
+                a
+                    text-decoration: none
+                    transition: .3s ease
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 18px
+                    line-height: 22px
+                    color: #FFFFFF
+
+
+
+    .copyright
+        margin-top: 40px
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #FFFFFF
+
+
++media-breakpoint-down(xl)
+    
+
++media-breakpoint-down(lg)
+    .footer 
+        padding-top: 70px
+        padding-bottom: 46px
+        border-top-left-radius: 10%
+        border-top-right-radius: 10%
+        .safety
+            margin-bottom: 40px
+        nav 
+            margin-bottom: 0
+            ul
+                flex-direction: column
+                li
+                    margin-bottom: 15px
+                    .icon
+                        display: inline-flex

@@ -1,0 +1,136 @@
+@use 'sass:math'
+@use 'sass:color'
+
+@import config
+@import 'blocks/**/*'
+
+
+.section-intro
+    background-repeat: no-repeat
+    background-position: center
+    background-image: url(../images/dist/main.png)
+    background-size: cover
+    height: 1042px
+    .heading-block
+        padding-top: 63px
+        padding-bottom: 63px
+        max-width: 800px
+        background-color: #fff
+        border-radius: 50px
+        text-align: center
+        margin-top: 205px
+        margin-left: 380px
+
+
+.section-games
+    margin-top: -116px
+    padding-bottom: 80px
+
+.section-about
+    padding-top: 80px
+    padding-bottom: 160px
+    .col-img
+        img
+            max-width: 100%
+            height: auto  
+            border-radius: 20px  
+        
+    .heading
+        margin-bottom: 30px
+    
+    .support
+        display: flex
+        *
+            margin-top: auto 
+            margin-bottom: auto
+        img
+            margin-left: 30px
+
+.section-news
+    padding-top: 40px
+    padding-bottom: 40px
+    .heading
+        margin-bottom: 40px
+        color: #fff
+    .card
+        margin-bottom: 40px
+
+    .row-btn
+        .btn
+            width: 100%
+
+.section-achievement
+    padding-top: 160px
+    padding-bottom: 354px
+    .heading_md
+        margin-bottom: 180px
+    
+.section-capture
+    padding-bottom: 200px
+    .block-form
+        border-radius: 20px
+        position: relative
+        padding-top: 65px
+        padding-bottom: 95px
+        .heading_md
+            margin-bottom: 52px
+        .maskot
+            bottom: -41px
+            left: -56px
+            position: absolute
+
+        .form
+            max-width: 537px
+            margin-left: auto
+            margin-right: auto
+            .btn
+                width: 100%
+
++media-breakpoint-down(xl)
+
++media-breakpoint-down(lg)
+    .section-intro 
+        height: 900px
+        .heading-block
+            margin-left: auto
+            margin-right: auto
+            padding: 40px
+
+    .section-about
+        padding-top: 0
+        padding-bottom: 80px
+        .col-img
+            display: none
+
+    .section-games
+        .game
+            margin-bottom: 30px
+
+    .row-scroll
+        flex-wrap: nowrap
+        overflow-x: auto
+        .col-lg-3
+            width: 320px
+    .section-achievement
+        padding-top: 80px
+        padding-bottom: 160px
+        .heading_md
+            margin-bottom: 60px
+
+    .section-capture 
+        padding-bottom: 120px
+        .block-form 
+            .maskot
+                display: none
++media-breakpoint-down(md)
+
+    .section-capture 
+        .block-form
+            padding: 30px
+            .btn
+                margin-top: 30px
+    
++media-breakpoint-down(sm)
+    .section-intro 
+        background-image: url(../images/dist/mob.png)
+

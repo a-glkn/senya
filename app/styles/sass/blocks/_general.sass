@@ -1,0 +1,302 @@
+// COLORS
+.text-accent
+    color: $accent !important
+
+.bg-dark
+    background-color: #101840
+    
+
+// GENERAL PROJECT STYLES
+.text-center
+    text-align: center
+
+.btn
+    padding: 16px 20px
+    background: #F7A824
+    border-radius: 30px
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 22px
+    color: #000000
+    border: 0
+    transition: .3s ease
+    &:hover
+        background-color: rgba(247, 168, 36, .8)
+
+    &_arr
+        display: flex
+        justify-content: center
+        span
+            color: #000000
+            margin-right: 10px
+        *
+            margin-top: auto
+            margin-bottom: auto
+a.btn
+    text-decoration: none !important
+    color: #000
+    display: inline-block
+    text-align: center
+
+.inverted
+    *
+        color: #fff
+
+p
+    margin: 0
+    &.sm
+        font-size: 16px
+
+// HEADINGS
+.heading
+    &_lg
+        font-style: normal
+        font-weight: 700
+        font-size: 64px
+        line-height: 1.22
+        text-align: center
+    &_md
+        font-style: normal
+        font-weight: 600
+        font-size: 36px
+        line-height: 140%
+
+
+.icon
+    display: flex
+    &__img
+        margin-top: auto
+        margin-bottom: auto
+        svg
+    &__title
+        margin-top: auto
+        margin-bottom: auto
+        margin-left: 10px
+
+.text
+    p
+        margin: 1em 0
+
+.game
+    &__title
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+        text-align: center
+        color: #FFFFFF
+        padding: 20px 30px
+        max-height: 84px
+        background-color: #101840
+        border-top-left-radius: 20px
+        border-top-right-radius: 20px
+    &__date
+        margin-bottom: 20px
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        color: #000000
+        text-align: center
+    img
+        max-width: 100%
+        height: auto
+        border-radius: 10px
+    &__content
+        padding: 30px
+        padding-top: 20px
+        position: relative
+        padding-bottom: 112px
+        border: 1px solid #101840
+        background-color: #fff
+        border-bottom-left-radius: 20px
+        border-bottom-right-radius: 20px
+    .btn
+        position: absolute
+        width: calc(100% - 60px)
+        bottom: 20px
+        left: 30px
+    &__text
+        margin-top: 20px
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 1.2
+        min-height: 6em
+        color: #000000
+        margin-top: 28px
+
+.card
+    height: 469px
+    text-decoration: none !important
+    display: flex
+    border-radius: 20px
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    &__content
+        margin-top: auto
+        background-color: #fff
+        border-radius: 20px
+        min-height: 125px
+        padding: 13.5px 18px
+    &__title
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+        color: #000000
+    &__date
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 1.222
+        color: #000000
+        margin-top: 10px
+.form
+    &__input
+        width: 100%
+        padding: 11px 30px
+        background: #FFFFFF
+        border-radius: 20px
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        color: #000
+        transition: .3s ease
+        border: 2px solid #fff
+        margin-bottom: 30px
+        &:focus
+            border-color: $accent
+
+
+.slider
+    position: relative
+    img
+        max-width: 100%
+        height: auto
+
+    .swiper-slide
+        transition: .3s ease
+        border-radius: 10px
+        overflow: hidden
+
+    .swiper-slide-active + .swiper-slide
+        transform: scale(2)
+        z-index: 10
+
+    .swiper-pagination
+        display: flex
+        width: 100%
+        justify-content: center
+        bottom: -194px
+        z-index: 9
+        &-bullet
+            margin-left: 8px
+            margin-right: 8px
+            background-color: #A4A4A4
+            width: 16px
+            height: 16px
+            opacity: 1
+            border-radius: 50%
+            &-active
+                background-color: #F7A824
+
+    .swiper-button-prev, .swiper-button-next
+        width: 42px
+        height: 16px
+        cursor: pointer
+        bottom: -193px
+        margin-top: 0
+        top: auto
+        z-index: 10
+        &:after
+            display: none
+        svg
+            width: 42px
+            height: 16px
+
+    .swiper-button-prev
+        left: 0
+        transform: rotate(180deg)
+
+    .swiper-button-next
+        right: 0
+
+
+.styled-checkbox
+    position: absolute
+    opacity: 0
+    & + label
+        position: relative
+        cursor: pointer
+        padding: 0
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        color: #FFFFFF
+        display: flex
+        span
+            margin-top: auto
+            margin-bottom: auto
+
+    & + label:before
+        content: ''
+        margin-right: 10px
+        display: inline-block
+        vertical-align: text-top
+        width: 25px
+        height: 25px
+        background: white   
+        border-radius: 5px
+    &:disabled + label
+        color: #b8b8b8
+        cursor: auto
+
+    &:disabled + label:before
+        box-shadow: none
+        background: #ddd
+
+    &:checked + label:after
+        content: ''
+        position: absolute
+        left: 5px
+        top: 6px
+        width: 17px
+        height: 15px
+        background-repeat: no-repeat
+        background-position: center
+        background-image: url(../images/dist/check.svg)
+    
++media-breakpoint-down(xl)
+  
+    
++media-breakpoint-down(lg)
+    .heading
+        &_lg
+            font-size: 52px
+        &_md
+            font-size: 32px
+
+    .slider
+        .swiper-slide-active + .swiper-slide
+            transform: scale(1)
+            z-index: 10
+
+        .swiper-pagination
+            bottom: -80px
+        .swiper-button-next, .swiper-button-prev
+            bottom: -79px
++media-breakpoint-down(md)
+    .heading
+        &_lg
+            font-size: 42px
+  
+ 
++media-breakpoint-down(sm)
+    .heading
+        &_lg
+            font-size: 32px
