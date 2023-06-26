@@ -39,6 +39,21 @@ a.btn
     display: inline-block
     text-align: center
 
+.btn-more
+    padding: 10px 30px
+    border: 1px solid #000000
+    border-radius: 20px
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 180%
+    color: #000000
+    background-color: #fff
+    display: inline-block
+    transition: .3s ease
+    &:hover
+        background-color: #F7A824
+        border-color: #F7A824
 .inverted
     *
         color: #fff
@@ -68,7 +83,6 @@ p
     &__img
         margin-top: auto
         margin-bottom: auto
-        svg
     &__title
         margin-top: auto
         margin-bottom: auto
@@ -126,6 +140,79 @@ p
         min-height: 6em
         color: #000000
         margin-top: 28px
+
+.el
+    margin-bottom: 40px
+    display: inline-block
+    text-decoration: none
+    img
+        border-radius: 20px
+        max-width: 100%
+        height: auto
+    &__title
+        margin-top: 20px
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        text-align: center
+        color: #000000
+        transition: .3s ease
+    &:hover
+        .el__title
+            color: $accent
+
+
+.tags
+    a
+        padding-left: 30px
+        padding-right: 30px
+        padding-top: 11px
+        padding-bottom: 11px
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 180%
+        color: #000000
+        display: inline-block
+        text-decoration: none
+        border: 1px solid #000000
+        border-radius: 20px
+        transition: .3s ease
+        &.active
+            background-color: #F7A824
+            border-color: #F7A824
+
+        &:hover
+            background-color: #F7A824
+            border-color: #F7A824
+
+.breadcrumbs
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 22px
+    color: #000000
+    a
+        color: #A4A4A4
+        padding-right: 34px
+        position: relative
+        text-decoration: none
+        display: inline-block
+        margin-right: 10px
+        &:after
+            content: ''
+            display: block
+            width: 24px
+            height: 24px
+            background-repeat: no-repeat
+            position: absolute
+            top: 50%
+            margin-top: -12px
+            right: 0
+            background-position: 0 
+            background-image: url(../images/dist/arr-r.svg)
+
 
 .card
     height: 469px
@@ -290,11 +377,19 @@ p
             bottom: -80px
         .swiper-button-next, .swiper-button-prev
             bottom: -79px
+
+    .tags
+        a
+            margin-bottom: 20px
+
 +media-breakpoint-down(md)
     .heading
         &_lg
             font-size: 42px
-  
+    
+    .tags
+        a
+            width: 100%
  
 +media-breakpoint-down(sm)
     .heading
