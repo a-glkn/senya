@@ -358,6 +358,84 @@ p
         background-position: center
         background-image: url(../images/dist/check.svg)
     
+
+.pagination
+    display: flex
+    margin-top: 10px
+    justify-content: center
+    &__el
+        width: 40px
+        height: 40px
+        display: inline-block
+        border: 1px solid #000000
+        border-radius: 20px
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        color: #000000
+        text-decoration: none
+        transition: .3s ease
+        line-height: 40px
+        text-align: center
+        margin-left: 8px
+        margin-right: 8px
+        &.current, &:hover
+            border-color: #F7A824
+            background-color: #F7A824
+
+
+.news-el
+    margin-bottom: 30px
+    &__img
+        img
+            max-width: 100%
+            height: auto
+            border-radius: 20px
+
+    &__content
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        color: #000000
+        p
+            margin: 1em 0
+
+    &__title
+        font-style: normal
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+        color: #000000
+        margin-bottom: 20px
+        a
+            color: #000
+            transition: .3s ease
+            text-decoration: none !important
+            transition: .3s ease
+            &:hover
+                color: $accent
+
+    &__more
+        padding: 11px 30px
+        border: 1px solid #000000
+        border-radius: 20px
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 22px
+        margin-top: 20px
+        color: #000000
+        text-decoration: none
+        transition: .3s ease
+        display: inline-block
+        &:hover
+            background-color: $accent
+            border-color: $accent
+            color: #000
+
+
+
 +media-breakpoint-down(xl)
   
     
@@ -382,6 +460,12 @@ p
         a
             margin-bottom: 20px
 
+    .news-el
+        &__content
+            margin-top: 20px
+
+        &__more
+            margin-top: 10px
 +media-breakpoint-down(md)
     .heading
         &_lg
