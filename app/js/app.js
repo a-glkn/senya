@@ -45,6 +45,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    var faq = document.querySelectorAll(".faq");
+    if(faq) {
+        faq.forEach((t) => {
+            t.addEventListener("click",function(e) {
+                faq.forEach((t) => {
+                    t.classList.remove('active');
+                });
+
+                t.classList.toggle('active');
+            }, false);
+        });
+    }
+
+
     // var liSubs = document.querySelectorAll(".extra-menu nav ul li.sub");
 	// liSubs.forEach((t) => {
     //     t.addEventListener("click",function(e) {

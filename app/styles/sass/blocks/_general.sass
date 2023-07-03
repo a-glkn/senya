@@ -436,6 +436,56 @@ p
             background-color: #F7A824
 
 
+.faq
+    margin-bottom: 20px
+    width: 100%
+    &:last-child
+        margin-bottom: 0
+    &__qusetion
+        font-style: normal
+        font-weight: 400
+        font-size: 18px
+        line-height: 1.22222
+        color: #000000
+        padding-right: 95px
+        padding-top: 30px
+        padding-bottom: 30px
+        padding-left: 39px
+        border-radius: 20px
+        position: relative
+        border: 1px solid #F7A824
+        background-color: transparent
+        cursor: pointer
+        transition: .3s ease
+        &-arrow
+            position: absolute
+            right: 39px
+            top: 36px
+            width: 27px
+            height: 15px
+            svg
+                position: absolute
+                top: 0
+                left: 0
+    &__content
+        padding-top: 26px
+        padding-left: 39px
+        padding-right: 39px
+        display: none
+        
+    &.active
+        .faq
+            &__qusetion
+                background-color: #F7A824
+                &-arrow
+                    transform: rotate(180deg)
+            &__content
+                display: block
+
+
+
+
+
 .news-el
     margin-bottom: 30px
     &__img
@@ -486,6 +536,8 @@ p
             border-color: $accent
             color: #000
 
+.row-archive-without-heading
+    margin-top: 50px
 
 
 +media-breakpoint-down(xl)
@@ -526,7 +578,30 @@ p
     .tags
         a
             width: 100%
- 
+    .faq
+        font-size: 16px
+        &__qusetion
+            padding-right: 60px
+            padding-top: 20px
+            padding-bottom: 20px
+            padding-left: 20px
+            font-size: 16px
+            &-arrow
+                right: 20px
+                top: 26px
+                width: 27px
+                height: 15px
+                width: 19px
+                height: 10.5px
+                svg
+                    width: 19px
+                    height: 10.5px
+            
+        &__content
+            padding-top: 26px
+            padding-left: 20px
+            padding-right: 20px
+            
 +media-breakpoint-down(sm)
     .heading
         &_lg
